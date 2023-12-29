@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>The island experiment</title>
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/windows-ui.css">
+    <link rel="stylesheet" href="./css/winui-icons.css">
+    <script src="./js/functions.js"></script>
+  </head>
+  <body>
+    <div class="program-box">
+      <div class="card-not-last">
+        <div class="app-alert-bar alert-bar-secondary main-alert">
+          <i class="icons10-exclamation-mark app-color-primary"></i>
+          <strong class="app-color-primary">It's important to note that in this experiment and in modern banking, money is debt created with interest.<br>There will be always more money owed than exist in the whole system.</strong></span>
+        </div>
+        <p>On an island of<input type="tel" class="app-input-text main-input" size="5" onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57" id="AmountOfPeople" required>people, the central bank issues<input type="tel" class="app-input-text main-input" size="5" onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57" id="AmountOfCreditsPerPerson" required>credits per each person with interest<input type="tel" class="app-input-text main-input" size="1" onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57" id="InterestOnCredits" required>%.</p>
+      </div>
+      <div class="card-not-last">
+        <button class="app-btn app-btn-outline-primary execute-button" onclick="calculateAndDisplay()">
+          <i class="icons10-fantasy"></i>
+          <span>Execute the experiment</span>
+        </button>
+      </div>
+      <div class="card-last" id="resultsCart">
+        <div class="app-alert-bar alert-bar-secondary">
+          <i class="icons10-exclamation-mark app-color-primary"></i>
+          <strong class="app-color-primary">Results will be displayed here. No computation has been executed yet.</strong>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
