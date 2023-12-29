@@ -12,7 +12,7 @@ function display() {
   if (isNaN(totalDebt) || isNaN(payableDebt) || isNaN(unpayableDebt)) {
     document.getElementById("resultsCart").innerHTML = '<div class="app-alert-bar alert-bar-danger">' +
                                                        '<i class="icons10-cross app-color-danger"></i>' +
-                                                       '<strong class="app-color-danger">All inputs must be numbers!</strong>' +
+                                                       '<strong class="app-color-danger">All inputs must be completed with numbers!</strong>' +
                                                        '</div>';
   }
   else if (totalDebt <= 0 || payableDebt <= 0 || unpayableDebt <= 0) {
